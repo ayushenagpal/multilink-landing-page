@@ -26,7 +26,7 @@ export function Hero() {
         style={{ transform: "translate3d(0, calc(var(--hero-progress, 0) * -36px), 0)" }}
       />
 
-      <div className="container-wrap relative grid min-h-[calc(100svh-7.75rem)] gap-12 py-16 sm:py-20 lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)] lg:items-center lg:gap-16 lg:py-24">
+      <div className="container-wrap relative grid min-h-[calc(100svh-7.75rem)] gap-10 py-14 sm:py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)] lg:items-center lg:gap-14 lg:py-20">
         <div
           data-reveal
           className="max-w-3xl lg:pr-6"
@@ -35,14 +35,14 @@ export function Hero() {
           <p className="technical-label border-brand-border/70 bg-white/85 text-brand-navy">
             {company.name} | Authorized US Distribution
           </p>
-          <h1 className="mt-8 text-5xl font-semibold leading-[0.94] tracking-[-0.05em] text-brand-navy sm:text-6xl lg:text-[4.75rem]">
+          <h1 className="mt-6 text-5xl font-semibold leading-[0.94] tracking-[-0.05em] text-brand-navy sm:text-6xl lg:text-[4.75rem]">
             B2B network hardware for ISP and infrastructure teams.
           </h1>
-          <p className="mt-10 max-w-2xl text-lg leading-8 text-brand-slate sm:text-xl">
+          <p className="mt-8 max-w-2xl text-lg leading-8 text-brand-slate sm:text-xl">
             {company.name} helps WISPs, ISPs, enterprises, schools, and integrators source authorized routing, wireless, fiber,
             surveillance, power, and voice hardware with fast Cincinnati fulfillment and practical technical support.
           </p>
-          <div className="mt-12 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/shop"
               className="focus-ring inline-flex items-center gap-2 rounded-xl2 bg-brand-red px-7 py-4 text-sm font-semibold text-white shadow-[0_18px_36px_rgba(81,121,187,0.24)] hover:-translate-y-0.5 hover:bg-brand-red-dark hover:shadow-[0_24px_44px_rgba(61,95,152,0.3)]"
@@ -57,16 +57,7 @@ export function Hero() {
               Request Project Pricing
             </Link>
           </div>
-          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-brand-slate">
-            <span>Routing & switching</span>
-            <span>Wireless & backhaul</span>
-            <span>Fiber & FTTH</span>
-            <span>Security & power</span>
-          </div>
-          <Link
-            href="https://multilink.us/shop-by-brand/"
-            className="focus-ring mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-red hover:gap-2 hover:text-brand-red-dark"
-          >
+          <Link href="https://multilink.us/shop-by-brand/" className="focus-ring mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-red hover:gap-2 hover:text-brand-red-dark">
             Browse authorized brands <ChevronRight className="h-4 w-4" />
           </Link>
         </div>
@@ -78,9 +69,9 @@ export function Hero() {
         >
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-red/70 to-transparent" />
           <p className="technical-label border-brand-red/15 bg-brand-light/90">Buyer support</p>
-          <h2 className="mt-6 text-xl font-semibold text-brand-navy">Why teams source through {company.name}</h2>
-          <p className="mt-3 text-sm text-brand-slate">Built for quoting, stocking, and supporting real infrastructure deployments.</p>
-          <ul className="mt-6 space-y-4">
+          <h2 className="mt-5 text-xl font-semibold text-brand-navy">Why teams source through {company.name}</h2>
+          <p className="mt-2.5 text-sm text-brand-slate">Built for quoting, stocking, and supporting real infrastructure deployments.</p>
+          <ul className="mt-5 space-y-4">
             {heroTrust.map((item) => (
               <li key={item} className="flex items-start gap-3 text-sm text-brand-slate">
                 <span className="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-red/10 text-brand-red">
@@ -90,7 +81,7 @@ export function Hero() {
               </li>
             ))}
           </ul>
-          <div className="mt-8 border-t border-brand-border/80 pt-6">
+          <div className="mt-7 border-t border-brand-border/80 pt-5">
             <h3 className="text-sm font-semibold text-brand-navy">Popular product paths</h3>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
               {popularPaths.map((item) => (
@@ -107,11 +98,6 @@ export function Hero() {
             </ul>
           </div>
         </aside>
-
-        <div className="pointer-events-none absolute inset-x-4 bottom-6 hidden items-center justify-between text-[0.68rem] font-medium uppercase tracking-[0.24em] text-brand-slate/70 lg:flex">
-          <span>Scroll to explore</span>
-          <span className="h-px flex-1 bg-gradient-to-r from-brand-border via-brand-slate/25 to-transparent" />
-        </div>
       </div>
     </section>
   );

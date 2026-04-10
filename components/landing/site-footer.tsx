@@ -1,13 +1,15 @@
+import Image from "next/image";
 import Link from "next/link";
 import { company, footerLinks, socialLinks } from "@/lib/content";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-brand-border bg-white py-12">
+    <footer className="border-t border-brand-border bg-white py-10 sm:py-11">
       <div className="container-wrap grid gap-8 lg:grid-cols-[1.4fr_1fr_1fr]">
         <div data-reveal>
+          <Image src="/multilink-logo.png" alt={company.legalName} width={220} height={110} className="h-16 w-auto object-contain sm:h-[4.5rem]" />
           <p className="text-[0.68rem] font-medium uppercase tracking-[0.22em] text-brand-slate">B2B network distribution</p>
-          <p className="mt-3 text-lg font-semibold text-brand-navy">{company.name}</p>
+          <p className="mt-3 text-lg font-semibold text-brand-navy">{company.legalName}</p>
           <p className="mt-4 max-w-md text-sm text-brand-slate">
             Authorized distributor of network, fiber, surveillance, power, and voice hardware for ISP, enterprise, campus, and
             security deployments.

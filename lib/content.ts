@@ -117,6 +117,5 @@ export const footerLinks: LinkItem[] = [
 
 export const socialLinks: LinkItem[] = [
   { label: "Facebook", href: "https://www.facebook.com/multilink.us" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/multilink-us/" },
-  { label: "YouTube", href: "https://www.youtube.com/@multilinkus" }
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/multilink-us/" }
 ];

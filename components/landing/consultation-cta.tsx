@@ -4,20 +4,23 @@ import { SectionShell } from "./section-shell";
 
 export function ConsultationCTA() {
   return (
-    <SectionShell>
+    <SectionShell className="py-10 sm:py-12 lg:py-14 xl:py-16">
       <div
         data-reveal
-        className="relative overflow-hidden rounded-[2rem] border border-brand-border/70 bg-[linear-gradient(135deg,#0f172a_0%,#16213a_62%,#1a1a2e_100%)] p-8 text-white shadow-[0_24px_80px_rgba(15,23,42,0.18)] sm:p-10 lg:p-12"
+        className="relative overflow-hidden rounded-[2rem] border border-brand-border/70 bg-[linear-gradient(135deg,#0f172a_0%,#16213a_62%,#1a1a2e_100%)] p-7 text-white shadow-[0_24px_80px_rgba(15,23,42,0.18)] sm:p-9 lg:p-10 xl:p-12"
       >
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_24%_28%,rgba(81,121,187,0.18),transparent_28%),linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:auto,44px_44px,44px_44px] opacity-35" />
+        <div className="pointer-events-none absolute inset-x-[14%] bottom-0 h-24 rounded-full bg-brand-red/15 blur-3xl" />
         <div className="relative">
           <p className="technical-label border-white/10 bg-white/5 text-white/70">Consultative buying support</p>
-          <h2 className="mt-6 text-3xl font-semibold sm:text-4xl">Need help building the right hardware stack?</h2>
-          <p className="mt-5 max-w-3xl text-base text-slate-200">
+          <h2 className="mt-5 max-w-3xl text-3xl font-semibold leading-tight tracking-[-0.03em] sm:text-4xl lg:text-[2.65rem]">
+            Need help building the right hardware stack?
+          </h2>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-slate-200">
             Tell us about the deployment and we’ll help you narrow the right products for WISP, enterprise, campus, security, fiber,
             and voice environments.
           </p>
-          <div className="relative mt-8 flex flex-wrap gap-4">
+          <div className="relative mt-7 flex flex-wrap gap-4 lg:mt-8">
             <div className="pointer-events-none absolute -left-6 top-1/2 h-20 w-56 -translate-y-1/2 rounded-full bg-brand-red/20 blur-3xl" />
             <Link
               href="https://multilink.us/contact-us/"
