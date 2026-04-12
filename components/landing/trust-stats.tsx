@@ -17,7 +17,7 @@ export function TrustStats() {
             >
               <div className="mx-auto mb-5 h-px w-10 bg-brand-red/35 sm:mx-0" />
               <p className="text-4xl font-semibold leading-[0.88] tracking-[-0.06em] text-brand-navy sm:text-[3.25rem]">{item.value}</p>
-              <p className="mt-4 max-w-[12rem] text-[0.72rem] font-medium uppercase tracking-[0.22em] text-brand-slate [font-family:var(--font-technical),monospace]">
+              <p className="mt-4 max-w-[13rem] text-center text-[0.72rem] font-medium uppercase tracking-[0.22em] text-brand-slate [font-family:var(--font-technical),monospace] sm:max-w-[12rem] sm:text-left">
                 {item.label}
               </p>
             </div>

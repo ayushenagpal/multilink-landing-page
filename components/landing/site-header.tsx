@@ -26,7 +26,7 @@ export function SiteHeader() {
         </nav>
         <Link
           href="/shop"
-          className="focus-ring inline-flex items-center rounded-xl2 bg-brand-red px-5 py-2.5 text-sm font-semibold text-white shadow-[0_14px_28px_rgba(81,121,187,0.24)] hover:-translate-y-0.5 hover:bg-brand-red-dark hover:shadow-[0_20px_36px_rgba(61,95,152,0.28)]"
+          className="focus-ring inline-flex min-w-[7.5rem] items-center justify-center rounded-xl2 bg-brand-red px-3 py-2.5 text-center text-[0.76rem] font-semibold leading-none text-white shadow-[0_14px_28px_rgba(81,121,187,0.24)] hover:-translate-y-0.5 hover:bg-brand-red-dark hover:shadow-[0_20px_36px_rgba(61,95,152,0.28)] sm:min-w-0 sm:px-5 sm:text-sm"
         >
           Shop Products
         </Link>
