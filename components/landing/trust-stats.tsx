@@ -12,7 +12,7 @@ export function TrustStats() {
           {trustStats.map((item, index) => (
             <div
               key={item.label}
-              className="relative px-6 py-8 text-center sm:px-8 sm:py-9 sm:text-left lg:px-10 lg:py-10 [&:not(:last-child)]:border-b [&:not(:last-child)]:border-brand-border/80 sm:[&:nth-child(odd)]:border-r lg:[&:nth-child(-n+3)]:border-r lg:[&:not(:last-child)]:border-b-0"
+              className="relative px-6 py-8 text-center sm:px-8 sm:py-9 sm:text-left [&:not(:last-child)]:border-b [&:not(:last-child)]:border-brand-border/80 sm:[&:nth-child(odd)]:border-r lg:px-10 lg:py-10 lg:[&:not(:last-child)]:border-r lg:[&:not(:last-child)]:border-b-0"
               style={{ transitionDelay: `${index * 70}ms` }}
             >
               <div className="mx-auto mb-5 h-px w-10 bg-brand-red/35 sm:mx-0" />

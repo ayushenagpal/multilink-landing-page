@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2, ChevronRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { company, heroTrust, popularPaths } from "@/lib/content";
@@ -26,28 +27,29 @@ export function Hero() {
         style={{ transform: "translate3d(0, calc(var(--hero-progress, 0) * -36px), 0)" }}
       />
 
-      <div className="container-wrap relative grid min-h-[calc(100svh-7.75rem)] gap-10 py-14 sm:py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)] lg:items-center lg:gap-14 lg:py-20">
+      <div className="container-wrap relative grid min-h-[calc(100svh-7.75rem)] gap-10 py-14 sm:py-16 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.92fr)] lg:items-center lg:gap-10 lg:py-20 xl:grid-cols-[minmax(0,1.05fr)_minmax(340px,0.92fr)] xl:gap-14">
         <div
           data-reveal
-          className="max-w-3xl lg:pr-6"
+          className="max-w-3xl lg:max-w-[34rem] lg:pr-2 xl:max-w-[36rem] xl:pr-6"
           style={{ "--reveal-shift": "calc(var(--hero-progress, 0) * -24px)", transitionDelay: "80ms" } as CSSProperties}
         >
           <p className="technical-label border-brand-border/70 bg-white/85 text-brand-navy">
             {company.name} | Authorized US Distribution
           </p>
-          <h1 className="mt-6 text-5xl font-semibold leading-[0.94] tracking-[-0.05em] text-brand-navy sm:text-6xl lg:text-[4.75rem]">
-            B2B network hardware for ISP and infrastructure teams.
+          <h1 className="mt-6 text-4xl font-semibold leading-[1] tracking-[-0.05em] text-brand-navy sm:text-5xl lg:text-[2.7rem] xl:text-[3.1rem]">
+            <span className="block">Wholesale Network Hardware</span>
+            <span className="block">for Business and Infrastructure Teams</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-8 text-brand-slate sm:text-xl">
-            {company.name} helps WISPs, ISPs, enterprises, schools, and integrators source authorized routing, wireless, fiber,
-            surveillance, power, and voice hardware with fast Cincinnati fulfillment and practical technical support.
+            Source authorized networking, wireless, fiber, security, power, and voice hardware with US-based fulfillment and
+            project pricing support.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/shop"
               className="focus-ring inline-flex items-center gap-2 rounded-xl2 bg-brand-red px-7 py-4 text-sm font-semibold text-white shadow-[0_18px_36px_rgba(81,121,187,0.24)] hover:-translate-y-0.5 hover:bg-brand-red-dark hover:shadow-[0_24px_44px_rgba(61,95,152,0.3)]"
             >
-              Explore Product Lines
+              Shop Products
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
@@ -57,9 +59,26 @@ export function Hero() {
               Request Project Pricing
             </Link>
           </div>
-          <Link href="https://multilink.us/shop-by-brand/" className="focus-ring mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-red hover:gap-2 hover:text-brand-red-dark">
-            Browse authorized brands <ChevronRight className="h-4 w-4" />
-          </Link>
+          <div className="mt-7 flex flex-wrap items-center gap-3">
+            <Link
+              href="https://multilink.us/shop-by-brand/mikrotik/"
+              className="focus-ring inline-flex h-12 min-w-[9rem] items-center justify-center rounded-2xl border border-brand-border/80 bg-white/75 px-4 shadow-[0_8px_20px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-brand-red/25"
+            >
+              <Image src="/mikrotik-logo.svg" alt="MikroTik" width={104} height={24} className="h-4.5 w-auto opacity-80" />
+            </Link>
+            <Link
+              href="https://multilink.us/shop-by-brand/ubiquiti/"
+              className="focus-ring inline-flex h-12 min-w-[9rem] items-center justify-center rounded-2xl border border-brand-border/80 bg-white/75 px-4 shadow-[0_8px_20px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-brand-red/25"
+            >
+              <Image src="/ubiquiti-logo.png" alt="Ubiquiti" width={106} height={32} className="h-6 w-auto opacity-80" />
+            </Link>
+            <Link
+              href="https://multilink.us/shop-by-brand/tp-link/"
+              className="focus-ring inline-flex h-12 min-w-[9rem] items-center justify-center overflow-hidden rounded-2xl border border-brand-border/80 bg-white/75 px-2 shadow-[0_8px_20px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-brand-red/25"
+            >
+              <Image src="/tp-link-logo.svg" alt="TP-Link" width={136} height={38} className="h-7 w-auto scale-[1.18] opacity-80" />
+            </Link>
+          </div>
         </div>
 
         <aside
@@ -68,9 +87,9 @@ export function Hero() {
           style={{ "--reveal-shift": "calc(var(--hero-progress, 0) * 26px)", transitionDelay: "180ms" } as CSSProperties}
         >
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-red/70 to-transparent" />
-          <p className="technical-label border-brand-red/15 bg-brand-light/90">Buyer support</p>
-          <h2 className="mt-5 text-xl font-semibold text-brand-navy">Why teams source through {company.name}</h2>
-          <p className="mt-2.5 text-sm text-brand-slate">Built for quoting, stocking, and supporting real infrastructure deployments.</p>
+          <p className="technical-label border-brand-red/15 bg-brand-light/90">Where buyers begin</p>
+          <h2 className="mt-5 text-xl font-semibold text-brand-navy">Stock and project support for real deployments.</h2>
+          <p className="mt-2.5 text-sm text-brand-slate">Built for infrastructure buyers who need faster routing into the right products and support.</p>
           <ul className="mt-5 space-y-4">
             {heroTrust.map((item) => (
               <li key={item} className="flex items-start gap-3 text-sm text-brand-slate">
@@ -82,7 +101,7 @@ export function Hero() {
             ))}
           </ul>
           <div className="mt-7 border-t border-brand-border/80 pt-5">
-            <h3 className="text-sm font-semibold text-brand-navy">Popular product paths</h3>
+            <h3 className="text-sm font-semibold text-brand-navy">Start with a path:</h3>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
               {popularPaths.map((item) => (
                 <li key={item.label}>
