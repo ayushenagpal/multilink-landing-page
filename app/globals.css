@@ -4,6 +4,8 @@
 
 :root {
   color-scheme: light;
+  --font-sans: "Aptos", "Segoe UI", "Helvetica Neue", "Arial Nova", Arial, sans-serif;
+  --font-technical: "SFMono-Regular", "Menlo", "Consolas", "Liberation Mono", monospace;
 }
 
 html {

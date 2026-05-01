@@ -46,14 +46,14 @@ export function Hero() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="/shop"
+              href="https://shop.multilink.us/"
               className="focus-ring inline-flex items-center gap-2 rounded-xl2 bg-brand-red px-7 py-4 text-sm font-semibold text-white shadow-[0_18px_36px_rgba(81,121,187,0.24)] hover:-translate-y-0.5 hover:bg-brand-red-dark hover:shadow-[0_24px_44px_rgba(61,95,152,0.3)]"
             >
               Shop Products
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
-              href="https://multilink.us/contact-us/"
+              href="https://shop.multilink.us/contact-us/"
               className="focus-ring inline-flex items-center rounded-xl2 border border-brand-border/80 bg-white/92 px-6 py-4 text-sm font-semibold text-brand-navy shadow-[0_12px_26px_rgba(15,23,42,0.06)] hover:-translate-y-0.5 hover:border-brand-red/40 hover:text-brand-red hover:shadow-[0_18px_36px_rgba(15,23,42,0.1)]"
             >
               Request Project Pricing
@@ -61,19 +61,19 @@ export function Hero() {
           </div>
           <div className="mt-7 flex flex-wrap items-center gap-3">
             <Link
-              href="https://multilink.us/shop-by-brand/mikrotik/"
+              href="https://shop.multilink.us/shop-by-brand/mikrotik/"
               className="focus-ring inline-flex h-12 min-w-[9rem] items-center justify-center rounded-2xl border border-brand-border/80 bg-white/75 px-4 shadow-[0_8px_20px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-brand-red/25"
             >
               <Image src="/mikrotik-logo.svg" alt="MikroTik" width={104} height={24} className="h-4.5 w-auto opacity-80" />
             </Link>
             <Link
-              href="https://multilink.us/shop-by-brand/ubiquiti/"
+              href="https://shop.multilink.us/shop-by-brand/ubiquiti/"
               className="focus-ring inline-flex h-12 min-w-[9rem] items-center justify-center rounded-2xl border border-brand-border/80 bg-white/75 px-4 shadow-[0_8px_20px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-brand-red/25"
             >
               <Image src="/ubiquiti-logo.png" alt="Ubiquiti" width={106} height={32} className="h-6 w-auto opacity-80" />
             </Link>
             <Link
-              href="https://multilink.us/shop-by-brand/tp-link/"
+              href="https://shop.multilink.us/shop-by-brand/tp-link/"
               className="focus-ring inline-flex h-12 min-w-[9rem] items-center justify-center overflow-hidden rounded-2xl border border-brand-border/80 bg-white/75 px-2 shadow-[0_8px_20px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-brand-red/25"
             >
               <Image src="/tp-link-logo.svg" alt="TP-Link" width={136} height={38} className="h-7 w-auto scale-[1.18] opacity-80" />

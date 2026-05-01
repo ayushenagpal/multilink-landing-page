@@ -22,7 +22,7 @@ export function ConsultationCTA() {
           <div className="relative mt-7 flex flex-wrap gap-4 lg:mt-8">
             <div className="pointer-events-none absolute -left-6 top-1/2 h-20 w-56 -translate-y-1/2 rounded-full bg-brand-red/20 blur-3xl" />
             <Link
-              href="https://multilink.us/contact-us/"
+              href="https://shop.multilink.us/contact-us/"
               className="focus-ring relative inline-flex items-center rounded-xl2 bg-brand-red px-6 py-3.5 text-sm font-semibold text-white shadow-[0_18px_36px_rgba(81,121,187,0.24)] hover:-translate-y-0.5 hover:bg-brand-red-dark hover:shadow-[0_24px_44px_rgba(61,95,152,0.3)]"
             >
               Request Project Pricing
