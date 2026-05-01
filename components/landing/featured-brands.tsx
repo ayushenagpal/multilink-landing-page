@@ -25,7 +25,7 @@ export function FeaturedBrands() {
             </span>
           ))}
           <Link
-            href="https://multilink.us/brands/"
+            href="https://shop.multilink.us/brands/"
             data-reveal
             className="focus-ring inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-navy shadow-[0_14px_34px_rgba(0,0,0,0.18)] hover:-translate-y-0.5 hover:text-brand-red"
             style={{ transitionDelay: "180ms" }}
